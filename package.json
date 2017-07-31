@@ -34,3 +34,7 @@
     "mout": "~0.7.1"
   }
 }
+"scripts": {
+    "postinstall": "grunt uglify",
+    "start": "node server.js"
+  }
