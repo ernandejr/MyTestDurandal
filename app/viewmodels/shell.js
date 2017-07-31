@@ -8,8 +8,10 @@
         },
         activate: function () {
             router.map([
-                { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true }
+                { route: '', title:'Home', moduleId: 'viewmodels/welcome', nav: true },
+                { route: 'Cadastre-se', moduleId: 'viewmodels/sign_up', nav: false },
+                { route: 'Login', moduleId: 'viewmodels/sign_in', nav: false },
+                { route: 'Profile', moduleId: 'viewmodels/profile', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();

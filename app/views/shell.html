@@ -1,23 +1,32 @@
 ﻿<div>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <a class="brand" data-bind="attr: { href: router.navigationModel()[0].hash }">
-                <i class="icon-home"></i>
-                <span>Durandal</span>
-            </a>
-            <ul class="nav" data-bind="foreach: router.navigationModel">
-                <li data-bind="css: { active: isActive }">
-                    <a data-bind="attr: { href: hash }, html: title"></a>
-                </li>
-            </ul>
-            <div class="loader pull-right" data-bind="css: { active: router.isNavigating }">
-                <i class="icon-spinner icon-2x icon-spin"></i>
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Branding Image -->
+                <a class="navbar-brand" data-bind="attr: { href: router.navigationModel()[0].hash }">
+                    My Test
+                </a>
             </div>
-            <form class="navbar-search pull-right" data-bind="submit:search">
-                <input type="text" class="search-query" placeholder="Search">
-            </form>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav" data-bind="foreach: router.navigationModel">
+                    <li data-bind="css: { active: isActive }">
+                        <a data-bind="attr: { href: hash }, html: title"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>    
     
     <div class="container-fluid page-host" data-bind="router: { transition:'entrance', cacheViews:true }"></div>
 </div>

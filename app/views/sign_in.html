@@ -1,0 +1,37 @@
+﻿<section>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" id="register">
+                            <div class="error" data-bind="visible:Error">
+                                <div class="innerMSGContainer">
+                                    <div class="innerMSG" data-bind="text:Error"></div>
+                                </div>
+                            </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" data-bind="value: email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Senha</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" data-bind="value: password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                            	<a data-bind="click: login" class="btn btn-primary">Login</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

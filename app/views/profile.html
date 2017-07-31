@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="vertical-center" data-bind="visible:Welcome">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 data-bind="text:Name"></h3>
+                <p class="bg-danger">Por favor acesse seu email e valide sua conta.</p>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-center" data-bind="visible:Profile">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 data-bind="text:Profile"></h3>
+                <img alt="" class="pull-left img-padding" data-bind="attr: { src: Url }"/>
+                <p data-bind="text:Name"></p>
+                <p data-bind="text:Username"></p>
+                <p data-bind="text:Email"></p>
+            </div>
+        </div>
+        <br>
+            	<p class="alert alert-info" data-bind="visible:Active">Conta validada com sucesso.</p>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+﻿<section>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Registro</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" id="register">
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Nome</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" data-bind="value: name">
+			                	<div class="error" data-bind="visible:ErrorName">
+								    <div class="innerMSGContainer">
+								        <div class="innerMSG" data-bind="text:ErrorName"></div>
+								    </div>
+								</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="col-md-4 control-label">Username</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" data-bind="value: username">
+	                            <div class="error" data-bind="visible:ErrorUserName">
+								    <div class="innerMSGContainer">
+								        <div class="innerMSG" data-bind="text:ErrorUserName"></div>
+								    </div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" data-bind="value: email">
+	                            <div class="error" data-bind="visible:ErrorEmail">
+								    <div class="innerMSGContainer">
+								        <div class="innerMSG" data-bind="text:ErrorEmail"></div>
+								    </div>
+								</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Senha</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" data-bind="value: password">
+	                            <div class="error" data-bind="visible:ErrorPassword">
+								    <div class="innerMSGContainer">
+								        <div class="innerMSG" data-bind="text:ErrorPassword"></div>
+								    </div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirmar senha</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" data-bind="value: password_confirmation">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                            	<a data-bind="click: sign_up" class="btn btn-primary">Registrar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

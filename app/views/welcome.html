@@ -1,13 +1,26 @@
 ﻿<section>
-    <h2 data-bind="html:displayName"></h2>
-    <blockquote data-bind="html:description"></blockquote>
-    <h3>Features</h3>
-    <ul data-bind="foreach: features">
-        <li data-bind="html: $data"></li>
-    </ul>
-    <div class="alert alert-success">
-      <h4>Read Me Please</h4>
-        For information about this template and for general documenation please visit <a href="http://www.durandaljs.com">the official site</a> and if you can't find 
-        answers to your questions there, we hope you will join our <a href="https://groups.google.com/forum/?fromgroups#!forum/durandaljs">google group</a>.
+    <div class="container">
+    <div class="vertical-center">
+        <div class="row">
+            <div class="col-sm-4 col-md-offset-4 restrito text-center">
+                <h3 class="text-center" data-bind="html:displayName"></h3>
+                <a href="/#Login" class="btn btn-primary">Login</a>
+                <a href="/#Cadastre-se" class="btn btn-success">Cadastre-se</a>
+            </div>
+        </div>
     </div>
+</div>
 </section>
+<!-- <div class="container">
+    <div class="vertical-center">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Bem-vindo {{ Auth::user()->username }}</h3>
+                @if (Auth::user()->active==0)
+                    <p class="bg-danger">Por favor acesse seu email e valide sua conta.</p>
+                @endif    
+            </div>
+        </div>
+    </div>
+</div>
+-->
